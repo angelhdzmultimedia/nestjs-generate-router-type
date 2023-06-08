@@ -1,5 +1,5 @@
-import { AppRouter } from "router";
+import { ServerRouter } from "server-router";
 
-function get(url: AppRouter) {
-  url === '/auth/user'
+function get(url: ServerRouter) {
+  url === '/auth/login'
 }

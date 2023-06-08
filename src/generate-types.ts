@@ -19,10 +19,10 @@ function getRoutes(router: any): string[] {
 function generateRouterType(router) {
   const routes = getRoutes(router)
   writeFileSync(
-    'router.ts',
-    `const routes = ${JSON.stringify(routes, null, 2)} as const
+    'server-router.ts',
+    `export const routes = ${JSON.stringify(routes, null, 2)} as const
 
-export type AppRouter = typeof routes[number]
+export type ServerRouter = typeof routes[number]
    `,
   )
 }
