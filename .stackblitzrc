@@ -1,4 +1,4 @@
 {
-  "installDependencies": true,
-  "startCommand": "pnpm start:dev"
+  "installDependencies": false,
+  "startCommand": "pnpm dev"
 }
