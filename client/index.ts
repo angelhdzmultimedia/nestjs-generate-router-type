@@ -1,11 +1,9 @@
-import { ServerRouter } from "server-router";
+import api from '../src/api'
 
-
-
-
-
-
-
-function get(url: ServerRouter) {
- 
+const connection: api.IConnection = {
+  host: 'https://localhost:5000/api'
 }
+
+api.functional.auth.login(connection, {
+
+})
