@@ -18,13 +18,14 @@ export interface RegisterData {
 @Controller('auth')
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
+
   @core.TypedRoute.Post('login')
-  public login(@core.TypedBody() body: LoginData) {
+  public login(@core.TypedBody() body: LoginData): LoginData {
     return body
   }
 
   @core.TypedRoute.Post('register')
-  public register(@core.TypedBody() body: RegisterData) {
+  public register(@core.TypedBody() body: RegisterData): RegisterData {
     return body
   }
 
